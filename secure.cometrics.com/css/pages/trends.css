@@ -1,0 +1,107 @@
+.trends.full-width {
+    margin-left: 12.8px;
+    margin-right: 12.8px;
+}
+
+.trends thead td.year {
+    text-align: center;
+}
+
+.trends thead td.year-start {
+    border-left: 1px solid #999999;
+}
+
+table.dataTable.trends.quarterly thead tr:first-of-type td:first-of-type {
+    border-bottom: 1px solid #0092BC;
+}
+
+.trends table td.padding-right {
+    border-right: 1px solid #dddddd;
+    margin-left: 0;
+    margin-right: 0;    
+    padding-left: 0;
+    padding-right: 0;
+}
+
+table.dataTable thead td {
+    padding-right: 1.75em!important;
+}
+
+.trends table td.name {
+    border-bottom: 1px solid #dddddd;
+}
+
+.trends table td.value {
+    text-align: right;
+    padding: 0.4em;
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    width: 5em;
+}
+
+ .trends table td.value:last-child {
+    border-right: 1px solid #dddddd;
+} 
+
+.trends table:not(.fixed-column) tr.subheader td:last-child {
+    border-right: 1px solid #555555;
+}
+
+.trends table td i {
+    font-size: 0.7em;
+}
+
+.trends table td.trend-up {
+    background-color: #99d9ea;
+}
+
+.trends table td.trend-down {
+    background-color: #fff2e5;
+}
+
+.trends table td.deviant-positive,
+.trends table td.deviant-negative {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, #eeeeee 2px, #eeeeee 4px);
+}
+
+.trends table td.trend-up.deviant-positive,
+.trends table td.trend-up.deviant-negative {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, #c0e7f2 2px, #c0e7f2 4px);
+}
+
+.trends table td.trend-down.deviant-positive,
+.trends table td.trend-down.deviant-negative {
+    background: repeating-linear-gradient(-45deg, transparent, transparent 2px, #fff2e5 2px, #fff2e5 4px);
+}
+
+.trends #calendarSystems {
+    width: 8.5em;
+}
+
+.trends #entities {
+    max-width: 300px;
+}
+
+@media (min-width: 992px) {
+    .trends #entities {
+        min-width: 180px;
+        max-width: initial;
+    }
+}
+
+/* These styles should have minimal or no visual effect
+   However, they fix a problem with responsive tables
+   because without this the browser does not always
+   return data when querying width/height */
+table.trends td:first-of-type {
+    min-width: 14em;
+}
+
+.trends .rangebar {
+    margin: 0 auto; 
+    padding-bottom: 10px;
+}
+
+ .responsive-scroll-table  table.trends.fixed-column {
+    pointer-events: auto!important;
+} 

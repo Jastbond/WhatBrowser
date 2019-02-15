@@ -1,0 +1,136 @@
+.uploads input[type="file"] {
+    display: none;
+}
+
+.uploads .drop-files {
+    border: 3px dashed #607D8B;
+    font-size: 1.2em;
+    padding: 40px;
+    padding-bottom: 60px;
+}
+
+.uploads .drop-files ul li {
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.uploads .drop-files.clickable {
+    text-align: center;
+    cursor: pointer;
+}
+
+.uploads .drop-files.drag-over {
+    background: #CFD8DC;
+}
+
+.uploads .drop-files a:hover {
+    text-decoration: none;
+}
+
+.uploads table.submissions tbody:hover tr {
+    background-color: #FEFFE7;
+}
+
+.uploads table.submissions tbody tr td {
+    border-bottom: 1px solid #B2E8F3;
+}
+
+.uploads table.submissions tbody:last-child td {
+    border-bottom: 1px solid #555555;
+}
+
+.uploads table.submissions tbody tr.expanded td {
+    border-bottom: none;
+}
+
+.uploads table.submissions tbody:last-child tr.expanded td {
+    border-bottom: none;
+}
+
+/*.uploads table.submissions tbody tr:last-child td {
+    border-bottom: 1px solid #B2E8F3;
+}*/
+
+/*.uploads table.submissions tbody:last-child tr:last-child td {
+    border-bottom: 1px solid #555555;
+}*/
+
+.uploads table.submissions tbody {
+    cursor: pointer;
+}
+
+.uploads table.submissions tr.collapsed {
+    display: none;
+}
+
+.uploads table.submissions .uploaded,
+.uploads table.submissions .size,
+.uploads table.submissions .submitter,
+.uploads table.submissions .download {
+    text-align: center;
+}
+
+.uploads table.submissions .reporting-period,
+.uploads table.submissions .name,
+.uploads table.submissions .status {
+    text-align: left;
+}
+
+.uploads table.submissions .download {
+    padding-right: 4px;
+}
+
+.uploads table.submissions tbody tr td.download a {
+    color:rgb(17,17,17);   
+}
+
+.uploads table.submissions tbody tr td.messages {
+    padding-left: 30px;   
+}
+
+.uploads table.submissions tbody tr td.download a:hover {
+  text-decoration:  none;
+} 
+
+.ui.table tr td { 
+    border-top: 0px !important; 
+    border-bottom: 0px !important; 
+    padding: 0.1em .7em !important;    
+}
+
+.invalidate-confirmation__filename {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.submission__message {
+    margin-top: -15px;
+}
+
+i.icon.reverse-loading {
+    height: 1em;
+    line-height: 1;
+    -webkit-animation: icon-reverse-loading 2s linear infinite;
+            animation: icon-reverse-loading 2s linear infinite;
+  }
+  @-webkit-keyframes icon-reverse-loading {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }
+  @keyframes icon-reverse-loading {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+  }

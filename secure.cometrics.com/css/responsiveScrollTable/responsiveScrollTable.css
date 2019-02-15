@@ -1,0 +1,32 @@
+.responsive-scroll-table {
+    overflow: auto;
+    position: relative;
+}
+
+@media print {
+    .responsive-scroll-table {
+        overflow: visible;
+        height: inherit !important;
+    }
+    
+    .responsive-scroll-table table.fixed-header,
+    .responsive-scroll-table table.fixed-column,
+    .responsive-scroll-table table.fixed-top-left {
+        display: none;
+    }
+}
+
+.responsive-scroll-table table.fixed-header,
+.responsive-scroll-table table.fixed-column,
+.responsive-scroll-table table.fixed-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: auto;
+    pointer-events: none;
+}
+
+.responsive-scroll-table table.fixed-top-left {
+    z-index: 3;
+}
